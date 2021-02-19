@@ -101,6 +101,7 @@ usersRouter.get(
         "http://localhost:3000/" + "?accessToken=" + req.user.tokens
       );
     } catch (error) {
+      console.log(error);
       next(error);
     }
   }

@@ -7,6 +7,7 @@ const notFoundErrorHandler = (err, req, res, next) => {
 
 const unauthorizedErrorHandler = (err, req, res, next) => {
   if (err.httpStatusCode === 401) {
+    console.log(err);
     res.status(401).send("Error! Not Authorized!");
   }
   next(err);
