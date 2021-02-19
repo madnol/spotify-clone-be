@@ -36,7 +36,7 @@ var corsOptions = {
 //MIDDLEWARES
 server.use(cors());
 server.use(express.json());
-// server.use(passport.initialize());
+server.use(passport.initialize());
 //ROUTES
 
 server.use("/users", userRouter);
