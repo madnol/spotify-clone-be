@@ -56,7 +56,7 @@ mongoose
     useUnifiedTopology: true,
     useCreateIndex: true,
   })
-  .catch(error => handleError(error))
+  .catch(error => console.log(error))
   .then(
     server.listen(port, () =>
       console.log(`listen on port: http://localhost:${port}`)
