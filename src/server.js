@@ -4,8 +4,8 @@ const listEndpoints = require("express-list-endpoints");
 const mongoose = require("mongoose");
 const cors = require("cors");
 //*PASSPORT
-// const passport = require("passport");
-// const oauth = require("./services/auth/oauth");
+const passport = require("passport");
+const oauth = require("./services/auth/oauth");
 
 //*ROUTER
 const userRouter = require("./services/users");
